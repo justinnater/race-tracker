@@ -1,0 +1,31 @@
+main {
+    padding: 1.5rem;
+}
+#main-content {
+    display: grid;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+    font-family: Arial, sans-serif;
+
+
+    @media (min-width: 1024px) {
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+    }
+
+    .grid-box {
+        border-radius: 0.5rem;
+        background-color: rgb(254, 254, 254);
+        box-shadow: 0 0 0.5rem rgb(0 0 0 / 0.1);
+
+        padding: 1rem;
+
+        @media (min-width: 1024px) {
+            padding: 2.5rem;
+        }
+    }
+
+    gap: 1.5rem;
+}

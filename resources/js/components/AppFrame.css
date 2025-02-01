@@ -1,0 +1,38 @@
+#app-frame {
+    color: rgb(0 0 0 / 0.5);
+    background-color: rgb(249 250 251);
+    overflow: hidden;
+}
+#background {
+    position: absolute;
+    top: 0;
+    left: -5rem;
+    max-width: 877px;
+    opacity: 0.8;
+}
+#container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 2rem;
+    flex-direction: column;
+}
+#content {
+    position: relative;
+    width: 100%;
+    max-width: 100rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 2rem;
+}
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header-logo {
+    height: 8rem;
+    width: 16rem;
+}

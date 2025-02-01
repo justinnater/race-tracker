@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "strict": true,  // ✅ Enables strict type checking
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "strictPropertyInitialization": true,
+        "noImplicitThis": true,
+        "useDefineForClassFields": true,
+        "jsx": "preserve",
+        "esModuleInterop": true,
+        "allowJs": true,
+        "skipLibCheck": true
+    },
+}

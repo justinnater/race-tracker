@@ -1,0 +1,90 @@
+.grid-box {
+    height: 30rem;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.subview-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 2rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subview-content {
+    position: relative;
+    font-size: 1.5rem;
+    width: 100%;
+    height: calc(100% - 3rem);
+}
+
+.toggleContainer {
+    font-size: 1.25rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: fit-content;
+    border-radius: 10px;
+    background: #ccc;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    bottom: 1.5rem;
+    left: 1.5rem;
+
+    @media (max-width: 1023px) {
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.toggleContainer::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    border-radius:0.5rem;
+    background: red;
+    transition: all 0.3s;
+}
+
+.toggleCheckbox:checked + .toggleContainer::before {
+    left: 50%;
+}
+
+.toggleContainer div {
+    padding: 0.5rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.toggleCheckbox {
+    display: none;
+}
+
+.toggleCheckbox:checked + .toggleContainer div:first-child{
+    color: white;
+    transition: color 0.3s;
+}
+
+.toggleCheckbox:checked + .toggleContainer div:last-child{
+    color: white;
+    transition: color 0.3s;
+}
+
+.toggleCheckbox + .toggleContainer div:first-child{
+    color: white;
+    transition: color 0.3s;
+}
+
+.toggleCheckbox + .toggleContainer div:last-child{
+    color: white;
+    transition: color 0.3s;
+}
