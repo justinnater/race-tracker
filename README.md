@@ -35,11 +35,16 @@ Ensure you have PHP 8.3+ and Composer installed.
 `cp .env.example .env` \
 `php artisan key:generate` 
 
+The default database is SQLite, but you can change it in the `.env` file.
+
+`php artisan migrate`
+
 Run tests (Feature & Unit)
 
 `php artisan test`
 
-The default database is SQLite, but you can change it in the `.env` file.
+
+Seed the database with dummy data to get started:
 
 `php artisan migrate:fresh --seed`
 
@@ -53,5 +58,5 @@ Start both the Laravel server and the Vite server:
 
 `composer run dev`
 
-Access the app Locally at `http://localhost:5173/`
+Access the app Locally at `http://localhost:8000/`
 
